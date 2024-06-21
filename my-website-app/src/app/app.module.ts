@@ -17,6 +17,7 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { BlogComponent } from './blog/blog.component';
 import { BlogPostComponent } from './blog-post/blog-post.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { BlogPostComponent } from './blog-post/blog-post.component';
     AboutMeComponent,
     ContactFormComponent,
     BlogComponent,
-    BlogPostComponent
+    BlogPostComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
