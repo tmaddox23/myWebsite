@@ -1,22 +1,12 @@
-<div class="form-container">
-    <button mat-icon-button class="close-button" (click)="closeForm()">
-      <mat-icon>close</mat-icon>
-    </button>
-  
-    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
-      <div class="form-field">
-        <label for="name-input" class="form-label">Name:</label>
-        <input id="name-input" matInput formControlName="name" />
-      </div>
-      
-      <div class="form-field">
-        <label for="description-input" class="form-label">Description:</label>
-        <textarea id="description-input" matInput formControlName="description"></textarea>
-      </div>
-      
-      <div class="button-container">
-        <button mat-raised-button color="primary" type="submit">Submit</button>
-      </div>
+<div class="overlay" (click)="closeForm()"></div>
+<div class="contact-form-container">
+  <div class="contact-form">
+    <form (submit)="sendEmail()">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required autofocus>
+      <label for="details">Details:</label>
+      <textarea id="details" name="details" rows="6" required></textarea>
+      <button type="submit">Submit</button>
     </form>
   </div>
-  
+</div>
