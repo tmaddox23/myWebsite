@@ -1,0 +1,70 @@
+.form-container {
+    position: relative;
+    background-color: #d8bfd8; /* Light purple color */
+    padding: 0px 20px 20px; /* Extra padding at the top for the close button */
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+  }
+  
+  .close-button {
+    width: 50px;
+    right: 10px;
+    left: 200px;
+    color:#4b0082;
+    background-color: #d8bfd8; /* Purple color */
+
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .form-field {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  .form-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #4b0082; /* Purple color for labels */
+  }
+  
+  input, textarea {
+    border: 1px solid #ccc; /* Border around input boxes */
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    width: 100%;
+  }
+  
+  textarea {
+    height: 150px; /* Larger square box for description */
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  button {
+    width: 100%;
+    background-color: #4b0082; /* Purple color */
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+  }
+  
+  button:hover {
+    background-color: #5e00a8; /* Darker purple on hover */
+    color: #d8bfd8;
+  }
+  

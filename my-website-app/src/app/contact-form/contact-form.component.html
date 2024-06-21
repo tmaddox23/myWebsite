@@ -1,0 +1,22 @@
+<div class="form-container">
+    <button mat-icon-button class="close-button" (click)="closeForm()">
+      <mat-icon>close</mat-icon>
+    </button>
+  
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+      <div class="form-field">
+        <label for="name-input" class="form-label">Name:</label>
+        <input id="name-input" matInput formControlName="name" />
+      </div>
+      
+      <div class="form-field">
+        <label for="description-input" class="form-label">Description:</label>
+        <textarea id="description-input" matInput formControlName="description"></textarea>
+      </div>
+      
+      <div class="button-container">
+        <button mat-raised-button color="primary" type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+  

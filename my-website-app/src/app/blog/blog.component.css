@@ -1,0 +1,71 @@
+.blog-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f0f0f0; /* Light grey background */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sidebar {
+    width: 20%;
+    background-color: #d8bfd8; /* Same color as the home page header */
+    padding: 20px;
+    border-radius: 8px 0 0 8px;
+    margin-right: 20px;
+    position: fixed;
+    height: 100vh;
+    box-sizing: border-box;
+  }
+  
+  .sidebar h2 {
+    color: #4b0082; /* Same color as the home page header text */
+    margin: 0;
+  }
+  
+  .sidebar hr {
+    border: 1px solid #4b0082; /* Same color as the home page header text */
+    margin: 10px 0;
+  }
+  
+  .sidebar nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar nav ul li {
+    margin: 10px 0;
+  }
+  
+  .sidebar nav ul li a {
+    color: #4b0082; /* Same color as the home page header text */
+    text-decoration: none;
+  }
+  
+  .sidebar nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .content {
+    margin-left: 25%; /* Adjust based on sidebar width */
+    padding: 20px;
+    width: 75%;
+    box-sizing: border-box;
+  }
+  
+  .section {
+    background-color: #d8bfd8; /* Light purple background for sections */
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .section h2 {
+    color: #4b0082; /* Same color as the home page header text */
+  }
+  
+  .section-separator {
+    background-color: #f0f0f0; /* Light grey background */
+    height: 20px;
+  }
+  

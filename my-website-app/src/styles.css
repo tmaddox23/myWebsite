@@ -1,0 +1,21 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Roboto, sans-serif;
+  }
+  
+  .mat-dialog-container {
+    padding: 24px;
+    border-radius: 8px;
+    max-width: 100%;
+    overflow: hidden; /* Ensure no scrollbar */
+  }
+  
+  .mat-form-field {
+    width: 100%;
+  }
+  
+  button {
+    width: 100%;
+  }
+  

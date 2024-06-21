@@ -1,0 +1,11 @@
+<div class="blog-posts-container">
+    <div *ngFor="let post of getPostsByCategory()" class="blog-post">
+      <h3 class="subject">{{ post.subject }}</h3>
+      <p class="preview">{{ post.content | slice:0:100 }}...</p>
+      <div class="blog-date">
+        <span>{{ post.date }}</span>
+      </div>
+    </div>
+    <button *ngIf="hasMorePosts()" (click)="viewAllPosts()">View All</button>
+  </div>
+  
