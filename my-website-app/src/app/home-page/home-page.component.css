@@ -1,0 +1,42 @@
+.header {
+    background-color: #d8bfd8; /* Soft purple color */
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid #b19cd9; /* Slightly darker border */
+  }
+  
+  .header h1 {
+    font-size: 48px; /* Large font size */
+    margin: 0;
+    color: #4b0082; /* Indigo color for text */
+  }
+  
+  .home-page-container {
+    background-color: #f0f0f0; /* Light grey color for the rest of the page */
+    padding: 20px;
+    min-height: 100vh; /* Ensure the container covers the full height */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .bottom-bar {
+    width: 100%;
+    background-color: #d8bfd8; /* Soft purple color */
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    border-top: 3px solid #b19cd9; /* Slightly darker border */
+    margin-top: auto; /* Ensure the bottom bar stays at the bottom */
+  }
+  
+  .bottom-bar a {
+    margin: 0 10px;
+    color: #4b0082; /* Indigo color for text */
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .bottom-bar a:hover {
+    text-decoration: underline;
+  }
+  

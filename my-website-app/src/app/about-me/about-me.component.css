@@ -1,0 +1,30 @@
+.about-me {
+    width: 50%;
+    background-color: #e0e0e0; /* Slightly darker grey */
+    padding: 20px;
+    box-sizing: border-box;
+    border: 3px solid #ccc; /* Thicker border */
+    border-radius: 10px; /* Rounded edges */
+    margin-bottom: 20px; /* Space between about-me and bottom-bar */
+  }
+  
+  .about-me h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .about-me p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .about-me a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .about-me a:hover {
+    text-decoration: underline;
+  }
+  
