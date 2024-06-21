@@ -10,7 +10,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { RouterModule } from '@angular/router';
 
-import { AppRoutesModule } from './app.routes';
+import { AppRoutingModule } from './app.routes';
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { AboutMeComponent } from './about-me/about-me.component';
@@ -19,6 +19,7 @@ import { BlogComponent } from './blog/blog.component';
 import { BlogPostComponent } from './blog-post/blog-post.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { BannerComponent } from './banner/banner.component';
 
 @NgModule({
   declarations: [
@@ -29,11 +30,12 @@ import { FooterComponent } from './footer/footer.component';
     BlogComponent,
     BlogPostComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    BannerComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutesModule,
+    AppRoutingModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
     MatDialogModule,

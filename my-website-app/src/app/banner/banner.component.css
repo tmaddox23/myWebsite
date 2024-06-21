@@ -1,0 +1,12 @@
+.banner {
+    background-color: #F0B7A4; /* Background color */
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    color: white; /* Text color */
+    border-radius: 0 0 50px 50px; /* Rounded bottom corners */
+    margin: 0 20% 0 20%; /* Margin off the left and right sides, overlapping header */
+    box-sizing: border-box; /* Ensure padding is included in width */
+  }
+  
