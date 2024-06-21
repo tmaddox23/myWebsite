@@ -9,8 +9,11 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { RouterModule } from '@angular/router';
+import { StoreModule } from '@ngrx/store';
+import { EffectsModule } from '@ngrx/effects';
+import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 
-import { AppRoutingModule } from './app.routes';
+import { AppRoutesModule } from './app.routes';
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { AboutMeComponent } from './about-me/about-me.component';
@@ -20,6 +23,8 @@ import { BlogPostComponent } from './blog-post/blog-post.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { BannerComponent } from './banner/banner.component';
+import { UserNameComponent } from './user-name/user-name.component';
+import { userReducer } from './store/user/user.reducer';
 
 @NgModule({
   declarations: [
@@ -31,11 +36,12 @@ import { BannerComponent } from './banner/banner.component';
     BlogPostComponent,
     HeaderComponent,
     FooterComponent,
-    BannerComponent
+    BannerComponent,
+    UserNameComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    AppRoutesModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
     MatDialogModule,
@@ -44,7 +50,10 @@ import { BannerComponent } from './banner/banner.component';
     MatButtonModule,
     MatIconModule,
     MatSnackBarModule,
-    RouterModule // Ensure RouterModule is imported
+    RouterModule,
+    StoreModule.forRoot({ user: userReducer }),
+    EffectsModule.forRoot([]),
+    StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: false })
   ],
   providers: [],
   bootstrap: [AppComponent]
